@@ -1,1 +1,1 @@
-print 'Hello cool cyber student!'
+print ('Hello student!')
