@@ -1,4 +1,4 @@
-__author__ = 'Avitay Geltman'
+__author__ = 'The Beatles'
 print('You say', end = ' ')
 
 
