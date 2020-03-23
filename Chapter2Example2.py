@@ -1,5 +1,5 @@
-__author__ = 'The Beatles'
-print('You say'),
+__author__ = 'Avitay Geltman'
+print('You say', end = ' ')
 
 
 def main ():
@@ -8,5 +8,5 @@ def main ():
 print('Goodbye')
 
 if __name__ == '__main__':
-    print('I say'),
+    print('I say', end = ' '),
     main()
