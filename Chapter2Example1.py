@@ -4,5 +4,5 @@ __author__ = 'Avitay Geltman'
 def main ():
     print ('Hello')
 
-    if __name__ == 'main_':
-        main()
+if __name__ == 'main_':
+    main()
