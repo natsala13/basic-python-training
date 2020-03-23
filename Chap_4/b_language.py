@@ -1,6 +1,5 @@
 # Page 58
-#sentence = input("Please Enter a sentence:\n")
-sentence = 'ani ohev otach'
+sentence = input("Please Enter a sentence:\n")
 i=0
 while i < len(sentence):
     if sentence[i] in 'aeiou':
