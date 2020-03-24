@@ -1,0 +1,10 @@
+num = input('Please enter a 5 digit number\n')
+
+print('You entered the number :' + num)
+n1 = int(num[0])
+n2 = int(num[1])
+n3 = int(num[2])
+n4 = int(num[3])
+n5 = int(num[4])
+print('The digit of this number are:' + num[0]+',' + num[1]+','+num[2]+','+num[3]+','+num[4])
+print(n1+n2+n3+n4+n5)
