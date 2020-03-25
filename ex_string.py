@@ -54,10 +54,10 @@ def both_ends(s):
 # Hint: s.replace(stra, strb) returns a version of string s
 # where all instances of stra have been replaced by strb.
 
-
 def fix_start(s):
-
-    return
+    s1 = s[0]
+    s2 = s.replace(s[0],'*')
+    return s1 + s2[1:len(s2)]
 
 
 # D. MixUp
@@ -68,10 +68,8 @@ def fix_start(s):
 #   'dog', 'dinner' -> 'dig donner'
 # Assume a and b are length 2 or more.
 
-
 def mix_up(a, b):
-    """ your docstring here """
-    # +++your code here+++
+
     return
 
 # E. verbing
