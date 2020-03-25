@@ -122,14 +122,14 @@ def front_back(a, b):
         a_front = a[:int(len(a)/2)]
         a_back = a[int(len(a)/2):]
     else:
-        a_front = int(a[:int(len(a)/2+0.5)])
-        a_back = int(a[int(len(a)/2+0.5):])
+        a_front = a[:int(len(a)/2+0.5)]
+        a_back = a[int(len(a)/2+0.5):]
     if len(b) % 2 == 0:
         b_front = b[:int(len(b)/2)]
         b_back = b[int(len(b)/2):]
     else:
-        b_front = int(b[:int(len(b)/2+0.5)])
-        b_back = int(b[int(len(b)/2+0.5):])
+        b_front = b[:int(len(b)/2+0.5)]
+        b_back = b[int(len(b)/2+0.5):]
     return a_front + b_front + a_back + b_back
   
   
