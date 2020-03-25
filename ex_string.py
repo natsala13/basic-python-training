@@ -69,8 +69,10 @@ def fix_start(s):
 # Assume a and b are length 2 or more.
 
 def mix_up(a, b):
-
-    return
+    c = a
+    a = b[:2] + a[2:len(a)]
+    b = c[:2] + b[2:len(b)]
+    return a + ' ' + b
 
 # E. verbing
 # Given a string, if its length is at least 3,
@@ -80,11 +82,13 @@ def mix_up(a, b):
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 
-
 def verbing(s):
-    """ your docstring here """
-    # +++your code here+++
-    return
+    if len(s) >= 3:
+        if s[len(s)-3:len(s)] == 'ing':
+            s = s + 'ly'
+        else:
+            s = s + 'ing'
+    return s
 
 
 # F. not_bad
@@ -98,9 +102,11 @@ def verbing(s):
 
 
 def not_bad(s):
-    """ your docstring here """
-    # +++your code here+++
-    return
+    index_not = s.find('not')
+    index_bad = s.find('bad')
+    if index_not < index_bad:
+        s = s[0:index_not] + 'good' + s[index_bad+3:]
+    return s
 
 
 # G. front_back
@@ -111,11 +117,20 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 
-
 def front_back(a, b):
-    """ your docstring here """
-    # +++your code here+++
-    return
+    if len(a) % 2 == 0:
+        a_front = a[:int(len(a)/2)]
+        a_back = a[int(len(a)/2):]
+    else:
+        a_front = int(a[:int(len(a)/2+0.5)])
+        a_back = int(a[int(len(a)/2+0.5):])
+    if len(b) % 2 == 0:
+        b_front = b[:int(len(b)/2)]
+        b_back = b[int(len(b)/2):]
+    else:
+        b_front = int(b[:int(len(b)/2+0.5)])
+        b_back = int(b[int(len(b)/2+0.5):])
+    return a_front + b_front + a_back + b_back
   
   
 # Provided simple test() function used in main() to print
